@@ -1,0 +1,120 @@
+/*html content*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background: #fdff00;   
+    font-size: 1.6rem;    
+}
+/*body  content*/
+
+.container {
+  
+    padding: 0.2rem;   
+    height: 100%;
+    text-align: center;
+
+}
+
+
+/* header*/
+header{
+    
+    margin-bottom: 2rem;
+}
+h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+h1 > span {
+    color: #fb0081;
+}
+
+
+/*main content*/
+.cat-basket {
+    display: flex;
+     justify-content: space-around;
+     margin: 0 auto;
+     height: 80%;
+
+ }
+ 
+
+
+.name {
+    margin-top: 0;
+    font-size: 1.5em;
+    
+}
+.cat-name{
+    color:azure;
+    margin: 0;
+}
+
+
+.card,
+.pic {
+    border-radius: 10px;
+}
+
+.card {
+    height: 260px;
+    padding: 1em;
+   background-color:rgb(120, 177, 34);
+    color: white;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    border:solid;
+    position: relative;
+}
+
+.pic {
+    max-height: 200px;
+   /* margin: 0 auto;*/
+}
+img{
+    width:100px;
+    height: 120px;
+}
+.material-icons-outlined{
+    padding: 0;
+}
+
+.high-pawed{
+    color:black;
+}
+.trophy::before{
+
+    content:'\1F3C6';
+    position: absolute;
+    top:0;
+    left:0;
+    font-size: 3rem;
+     transform: rotate(-45deg);
+
+
+}
+
+
+
+/*to emulate colored scheme , go to dev tools, 
+press cttrl + shift + p , type show rendering 
+then you will find "emulate css"*/
+@media (prefers-color-scheme:dark){
+    body{
+        background: black;
+    }
+    .card{ background: navy;
+    }
+    h1{color:white ;}
+}
+
+
